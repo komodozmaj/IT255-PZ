@@ -10,10 +10,7 @@ import { UserServiceService } from 'src/app/services/user/user-service.service';
 })
 export class LoginPageComponent implements OnInit {
 
-  names: string[] = ["Mare", "Milan", "Aca", "Spaske", "Gogi", "Dzoni", "Andrija", "Ceka"]
-  broj: number = 100
-
-
+ 
   loginform:FormGroup
   constructor(private formbuilder: FormBuilder,
     private registerService: UserServiceService,

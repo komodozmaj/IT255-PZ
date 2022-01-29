@@ -1,0 +1,22 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Model: {{car.name}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Additional info</h6>
+      <p class="card-text">
+          Miles per gallon: {{car.miles_per_gallon}}<br/>
+          Cylinders: {{car.cylinders}}<br/>
+          Displacement: {{car.displacement}}<br/>
+          Horsepower: {{car.horsepower}}<br/>
+          Weight in lbs: {{car.weight_in_lbs}}<br/>
+          Acceleration: {{car.acceleration}}<br/>
+          Year: {{car.year}}<br/>
+          Origin: {{car.origin}}<br/>
+          Price: {{price}}$
+      </p>
+      <label for="days">Days: </label>
+      <input type="number" name="days" min="1" [(ngModel)]="days">
+      <button type="button" class="btn btn-success" (click)="addToFavorites()">Add</button><br/>
+
+      <p>Total: {{days * price}}$</p>
+    </div>
+</div>

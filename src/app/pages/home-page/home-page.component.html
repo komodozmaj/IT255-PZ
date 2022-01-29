@@ -1,1 +1,3 @@
-<p>home-page works!</p>
+<div class="cars">
+    <app-car *ngFor="let car of cars" [car]="car" (addToFav)="add($event)"></app-car>
+</div>

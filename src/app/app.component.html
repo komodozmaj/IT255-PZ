@@ -1,11 +1,18 @@
 
 <nav>
    
-    <button style="margin: 5px;" routerLink="/register">  Register</button>
+    <div *ngIf="!valid()">
+        <button style="margin: 5px;" routerLink="/register">Register</button>
    
-    <button style="margin: 5px;" routerLink="/login">   Login</button>
-   
-    
+        <button style="margin: 5px;" routerLink="/login">Login</button>
+    </div>
+    <div *ngIf="valid()">
+        <button  style="margin: 5px;" routerLink="/login" (click)="logout()">Logout</button>
+
+        <button  style="margin: 5px;" routerLink="/home">Home</button>
+        <button  style="margin: 5px;" routerLink="/carlist">Car list</button>
+    </div>
+
   
 </nav>
 
