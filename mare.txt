@@ -1,0 +1,41 @@
+car
+   car_id
+   name
+   miles_per_gallon
+   cylinders
+   dispacement
+   horsepower
+   weight_in_lbs
+   acceleration
+   year
+   origin
+
+
+user
+   email
+   password
+   car_list
+        rented_car
+              car_id
+              days
+              price
+
+
+{
+  "email": "user123@gmail.com",
+  "password": "user123",
+  "car_list": [
+	{
+	   "car_id": "89c34r",
+	   "days": 20,
+           "price": 200 
+	}	
+  ]
+}
+
+
+https://account.mongodb.com/account/login?signedOut=true
+
+MongoDB Atlas:
+email: gifinag924@yks247.com
+pass: &@CD=4@w7vL#J)a}
